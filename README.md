@@ -1,2 +1,16 @@
-# face-detection-application
-A face detection application that detects and counts human faces in real time using a camera. It displays the total number of faces detected on the screen. If no faces are found, it shows “No Face Detected.”
+# Face detector
+
+A simple Streamlit app that detects faces in an uploaded photo using OpenCV's
+pre-trained Haar cascade detector. Detected faces are outlined and labeled;
+the result can be downloaded as a PNG.
+
+## Run locally
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+Open the local URL printed by Streamlit, then upload a JPG, PNG, or WebP photo.
